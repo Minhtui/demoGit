@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+            <p id="description"  class="description text-center">Thank you for taking the time to help us improve the platform</p>    
+        </header>
+        <form action="" id="survey-form">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" required placeholder="Enter your name" name="name" class="form-control">
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="eamil" id="email" required placeholder="Enter your email" name="email" class="form-control" >
+            </div>
+            <!-- Age -->
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span class="clue">(optional)</span> </label>
+                <input type="number" name="" id="number" min="10" max="99" required placeholder="Age" name="age" class="form-control">
+            </div>
+            <!-- which option best describes yuor current role? -->
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select name="role" id="dropdown">
+                    <option disabled selected value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- Would you recommend freeCodeCamp to a friend? -->
+            <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label for="">
+                    <input type="radio" name="user-recommend" id="" value="definitely" checked> Definitely
+                </label>
+                <label for="">
+                    <input type="radio" name="user-recommend" id="" value="maybe" > Maybe
+                </label>
+                <label for="">
+                    <input type="radio" name="user-recommend" id="" value="notSure"> Not sure
+                </label>
+            </div>
+            <!-- What is your favourite feature of freeCodeCamp? -->
+            <div class="form-group">
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select name="" id="">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+            <!-- What would you like to see improved? -->
+            <div class="form-group">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="frontEndProject" class="input-checkbox"> Front-end Projects
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="backEndProject" class="input-checkbox"> Back-end Projects
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="dataVisualization" class="input-checkbox"> Data Visualization
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="challenges" class="input-checkbox"> Challenges
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="openSourceCommunity" class="input-checkbox"> Open Source Community
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="gitterHelpRooms" class="input-checkbox"> Gitter help rooms
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="videos" class="input-checkbox"> Videos
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="cityMeetups" class="input-checkbox"> City Meetups
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="wiki" class="input-checkbox"> Wiki
+                </label> 
+                <label for="">
+                    <input type="checkbox" name="" id="" value="forum" class="input-checkbox"> Forum
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="additionalCourses" class="input-checkbox"> Additional Courses
+                </label>
+            </div>
+            <!-- Any comments or suggestions -->
+            <div class="form-group"> 
+                <p>Any comments or suggestions</p>
+                <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your comment here..." class="input-textarea">
+
+                </textarea>
+            </div>
+            <!-- Submit -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button" >
+                    Submit
+                </button>
+            </div>
+
+        </form>    
+    </div>
+</body>
+</html>
