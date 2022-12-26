@@ -1,0 +1,50 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+html {
+    background-image: 
+    linear-gradient(rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    font-family: poppins, sans-serif;
+    color: #fff;
+}
+
+label, input {
+    margin-bottom: 6px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+}
+
+.description {
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* form */
+#survey-form {
+    background-color: rgba(27, 27, 50, 0.5);
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 16px;
+}
+
